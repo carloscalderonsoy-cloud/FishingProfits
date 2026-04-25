@@ -23,8 +23,7 @@
         "Sesiones en vivo semanales",
         "Revisión de operaciones"
       ],
-      "destacado": true,
-      "whatsapp_msg": "Hola, me interesa la membresía de Trading Desde Cero ($400/mes)."
+      "destacado": true
     },
     {
       "id": "price-action-avanzado",
@@ -48,8 +47,7 @@
         "Diario de trading",
         "Soporte Telegram 60 días"
       ],
-      "destacado": false,
-      "whatsapp_msg": "Hola, me interesa el curso Price Action Avanzado."
+      "destacado": false
     },
     {
       "id": "trading-institucional",
@@ -73,8 +71,7 @@
         "Análisis semanal personalizado",
         "Red de traders avanzados"
       ],
-      "destacado": false,
-      "whatsapp_msg": "Hola, me interesa Trading Institucional Elite."
+      "destacado": false
     }
   ]
 }

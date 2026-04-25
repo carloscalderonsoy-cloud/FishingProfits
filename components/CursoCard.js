@@ -51,7 +51,7 @@ export default function CursoCard({ curso }) {
         </div>
 
         <a
-          href={waLink(curso.whatsapp_msg)}
+          href={siteConfig.telegram}
           target="_blank"
           rel="noopener noreferrer"
           className="w-full inline-flex items-center justify-center gap-2 bg-green text-black font-display font-bold tracking-[0.15em] text-sm py-3 hover:bg-green/90 transition"

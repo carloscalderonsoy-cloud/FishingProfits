@@ -28,14 +28,6 @@ export default function ContactoPage() {
 
         <div className="flex flex-col gap-3 max-w-sm mx-auto">
           <a
-            href={waLink('Hola, quiero información sobre Fishing Profits.')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-display font-bold tracking-[0.15em] text-sm px-7 py-4 hover:bg-[#25D366]/90 hover:shadow-[0_0_20px_rgba(37,211,102,0.4)] transition-all"
-          >
-            <MessageCircle className="w-5 h-5" fill="white" strokeWidth={0} /> WHATSAPP
-          </a>
-          <a
             href={siteConfig.instagram}
             target="_blank"
             rel="noopener noreferrer"
