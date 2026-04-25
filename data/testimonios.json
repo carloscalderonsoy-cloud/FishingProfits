@@ -1,0 +1,40 @@
+{
+  "testimonios": [
+    {
+      "handle": "@carlos.trades",
+      "texto": "En tres meses cambió completamente mi lectura del mercado. Pasé de adivinar a operar con plan.",
+      "resultado": "+18% en 30 días",
+      "nivel": "Básico"
+    },
+    {
+      "handle": "@m.rivera_fx",
+      "texto": "Las señales son oro puro. Entradas limpias con SL y TP claros. Recuperé la mensualidad en la primera semana.",
+      "resultado": "+27% en 45 días",
+      "nivel": "Señales"
+    },
+    {
+      "handle": "@ana.pips",
+      "texto": "La asesoría en vivo te obliga a pensar como trader, no como apostador. Cambió mi mentalidad.",
+      "resultado": "Cuenta fondeada 50K",
+      "nivel": "Asesoría"
+    },
+    {
+      "handle": "@jorge_mx",
+      "texto": "Nivel brutal. Explicaciones claras y material que sirve en el mundo real, no teoría de YouTube.",
+      "resultado": "+12% mensual constante",
+      "nivel": "Intermedio"
+    },
+    {
+      "handle": "@laura.charts",
+      "texto": "La comunidad es lo que marca la diferencia. Siempre hay alguien analizando contigo.",
+      "resultado": "+22% en 60 días",
+      "nivel": "Básico"
+    },
+    {
+      "handle": "@daniel_pa",
+      "texto": "Por fin entiendo por qué el precio se mueve. La estructura del curso es impecable.",
+      "resultado": "+15% en 40 días",
+      "nivel": "Avanzado"
+    }
+  ]
+}

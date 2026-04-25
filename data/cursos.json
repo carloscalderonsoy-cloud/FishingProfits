@@ -1,0 +1,80 @@
+{
+  "cursos": [
+    {
+      "id": "trading-desde-cero",
+      "nombre": "Trading Desde Cero",
+      "nivel": "Básico",
+      "precio": 400,
+      "moneda": "USD",
+      "periodo": "mes",
+      "descripcion": "Membresía mensual al programa flagship. Domina el análisis técnico, la gestión de riesgo y construye tu sistema de trading desde fundamentos sólidos.",
+      "temario": [
+        "Velas japonesas y acción del precio",
+        "Soportes, resistencias y zonas institucionales",
+        "Estructura de mercado y tendencias",
+        "Gestión de riesgo y psicología",
+        "Plan de trading completo"
+      ],
+      "duracion": "Acceso continuo · 8h de contenido base",
+      "incluye": [
+        "Video HD on-demand",
+        "PDF descargable",
+        "Grupo privado Telegram",
+        "Sesiones en vivo semanales",
+        "Revisión de operaciones"
+      ],
+      "destacado": true,
+      "whatsapp_msg": "Hola, me interesa la membresía de Trading Desde Cero ($400/mes)."
+    },
+    {
+      "id": "price-action-avanzado",
+      "nombre": "Price Action Avanzado",
+      "nivel": "Intermedio",
+      "precio": 550,
+      "moneda": "USD",
+      "periodo": "único",
+      "descripcion": "Profundiza en lectura pura de velas, order blocks, liquidity y flujo institucional. Para traders que ya dominan lo básico.",
+      "temario": [
+        "Order Blocks y Fair Value Gaps",
+        "Liquidity sweeps y manipulación",
+        "Multitemporalidad avanzada",
+        "Confluencias de alta probabilidad",
+        "Backtest sistemático"
+      ],
+      "duracion": "12 horas · Pago único",
+      "incluye": [
+        "Curso grabado HD",
+        "Plantillas TradingView",
+        "Diario de trading",
+        "Soporte Telegram 60 días"
+      ],
+      "destacado": false,
+      "whatsapp_msg": "Hola, me interesa el curso Price Action Avanzado."
+    },
+    {
+      "id": "trading-institucional",
+      "nombre": "Trading Institucional Elite",
+      "nivel": "Avanzado",
+      "precio": 850,
+      "moneda": "USD",
+      "periodo": "único",
+      "descripcion": "El programa definitivo. Pensamiento institucional, gestión de portafolio y operativa de alto capital. Grupo reducido.",
+      "temario": [
+        "Lógica de smart money",
+        "Correlaciones intermarket",
+        "Sizing dinámico y escalado",
+        "Construcción de edge estadístico",
+        "Framework de ejecución profesional"
+      ],
+      "duracion": "20 horas · Grupo cerrado",
+      "incluye": [
+        "Mentoría grupal 8 semanas",
+        "Acceso a sala en vivo",
+        "Análisis semanal personalizado",
+        "Red de traders avanzados"
+      ],
+      "destacado": false,
+      "whatsapp_msg": "Hola, me interesa Trading Institucional Elite."
+    }
+  ]
+}

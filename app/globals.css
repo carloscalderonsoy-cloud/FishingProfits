@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 11%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 98 66% 41%;
+    --primary-foreground: 0 0% 5%;
+    --secondary: 0 0% 11%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 11%;
+    --muted-foreground: 0 0% 47%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 68% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 98 66% 41%;
+    --radius: 0.25rem;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-black text-white font-body antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+  ::selection { background-color: #4CAF23; color: #0D0D0D; }
+}
+
+@layer utilities {
+  /* ── Grid patterns ─────────────────────────── */
+  .grid-pattern {
+    background-image:
+      linear-gradient(rgba(76,175,35,.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(76,175,35,.035) 1px, transparent 1px),
+      linear-gradient(rgba(76,175,35,.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(76,175,35,.06) 1px, transparent 1px);
+    background-size: 28px 28px, 28px 28px, 140px 140px, 140px 140px;
+    mask-image: radial-gradient(ellipse at center, #000 30%, transparent 90%);
+    -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 90%);
+  }
+  .grid-pattern-dense {
+    background-image:
+      linear-gradient(rgba(76,175,35,.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(76,175,35,.04) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+
+  /* ── Atmospheric background (sections) ────── */
+  .atm-bg {
+    background:
+      radial-gradient(ellipse 100% 80% at 80% 30%, rgba(76,175,35,0.08), transparent 55%),
+      radial-gradient(ellipse 60% 50% at 20% 90%,  rgba(76,175,35,0.03), transparent 60%),
+      radial-gradient(circle at 50% 50%, #0F0F0F 0%, #050505 90%);
+  }
+  .atm-bg-dark {
+    background:
+      radial-gradient(ellipse 80% 60% at 70% 20%, rgba(76,175,35,0.06), transparent 50%),
+      radial-gradient(circle at 50% 50%, #111111 0%, #080808 100%);
+  }
+
+  /* ── Scanlines overlay ─────────────────────── */
+  .scanlines::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+      180deg,
+      rgba(255,255,255,0.012) 0px,
+      rgba(255,255,255,0.012) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+    pointer-events: none;
+    mix-blend-mode: overlay;
+  }
+
+  /* ── Corner brackets (terminal aesthetic) ─── */
+  .corners {
+    position: relative;
+  }
+  .corners::before,
+  .corners::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-color: #4CAF23;
+    border-style: solid;
+    pointer-events: none;
+    z-index: 2;
+  }
+  .corners::before { top: -1px;    left: -1px;  border-width: 1px 0 0 1px; }
+  .corners::after  { bottom: -1px; right: -1px; border-width: 0 1px 1px 0; }
+
+  /* ── Typography utilities ──────────────────── */
+  .text-gradient-green {
+    background: linear-gradient(135deg, #4CAF23 0%, #8BE859 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .eyebrow {
+    @apply font-mono text-xs tracking-[0.3em] uppercase text-green;
+  }
+  .h1-line-1 {
+    @apply block font-display font-bold uppercase;
+    font-size: clamp(1.4rem, 2.4vw, 2.2rem);
+    line-height: 1;
+    letter-spacing: .04em;
+    color: rgba(255,255,255,0.82);
+  }
+  .h1-line-2 {
+    @apply block font-display font-black uppercase;
+    font-size: clamp(4rem, 9vw, 8rem);
+    line-height: .88;
+    letter-spacing: -.03em;
+    color: #4CAF23;
+    text-shadow: 0 0 40px rgba(76,175,35,0.28);
+  }
+
+  /* ── Scrollbar ─────────────────────────────── */
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+}
+
+/* Native details/summary reset for FAQ */
+details > summary { list-style: none; cursor: pointer; }
+details > summary::-webkit-details-marker { display: none; }
